@@ -1,0 +1,19 @@
+.header-left img {
+  height :30px;
+}
+
+.link-button {
+  cursor: pointer
+}
+
+.mega-menu-item {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.mega-menu-item:hover {
+  background-color: #e6f7ff;  /* 💙 연한 파란색 배경 */
+  color: #1890ff;             /* 💙 파란색 텍스트 (Ant Design 기본 블루) */
+}

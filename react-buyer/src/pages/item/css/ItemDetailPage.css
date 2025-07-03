@@ -1,0 +1,199 @@
+/* ===== Header ===== */
+.ant-layout-header {
+  background-color: #001529;
+  color: white;
+  padding: 0 50px;
+}
+.ant-layout-header .logo {
+  color: white;
+  font-size: 22px;
+}
+.ant-layout-header .ant-menu-item {
+  color: white;
+}
+
+/* ===== Footer ===== */
+.ant-layout-footer,
+.item-detail-footer {
+  background-color: #001529;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.ant-layout-footer a {
+  color: white;
+  text-decoration: none;
+}
+.ant-layout-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Content ===== */
+.ant-layout-content {
+  background-color: #f7f7f7;
+  padding: 40px 50px;
+  min-height: calc(100vh - 64px - 70px);
+}
+
+/* ===== 전체 레이아웃 ===== */
+.item-detail-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== 이미지 영역 ===== */
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 대표 이미지 + 썸네일을 가로로 배치 */
+.main-image-with-thumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.item-detail-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 썸네일 세로 리스트 */
+.thumbnail-list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
+}
+.thumbnail:hover {
+  border: 2px solid #1890ff;
+}
+.thumbnail.active {
+  border: 2px solid #1890ff;
+}
+
+/* ===== 상품 정보 영역 ===== */
+.item-detail-info .ant-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;  /* ✅ 이거 추가 */
+}
+
+.item-detail-info {
+  max-width: 500px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.item-detail-info .ant-card-meta-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.item-detail-info .ant-card-meta-description {
+  font-size: 20px;
+  color: #ff5722;
+}
+.item-detail-description {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.item-writer {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.genrename {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.publisher {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.item-explain {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d4f;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+/* ===== 버튼 ===== */
+
+.item-detail-button-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;  /* ✅ 핵심 변경 */
+  gap: 12px;
+}
+
+.item-detail-button-container .ant-btn {
+  white-space: nowrap;
+  padding: 0 16px;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+  .item-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-detail-info {
+    max-width: 100%;
+  }
+
+  /* .item-detail-image {
+    width: 100%;
+    max-width: 300px;
+  } */
+
+  .item-detail-image {
+    width: 300px;
+    height: 450px;  /* ✅ 높이를 고정 */
+    object-fit: cover;  /* ✅ 이게 핵심 */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .thumbnail-list-vertical {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.inline-button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.inline-button-group .ant-btn {
+  width: auto !important;
+}

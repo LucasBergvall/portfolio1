@@ -1,0 +1,120 @@
+/* MegaDropDown.css */
+
+.mega-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상단 탭 바 */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdfaf7;
+  border-top: 1px solid #d9cfc0;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px 20px 0 0;
+}
+
+.tabs button {
+  border: none;
+  background: #e0dbd4;
+  color: #333;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tabs button.active {
+  background: #bfa089;
+  color: white;
+}
+
+.arrow-btn {
+  font-size: 18px;
+  color: #a38b74;
+  cursor: pointer;
+}
+
+/* 전체 펼쳐졌을 때의 내용 */
+.drawer-content {
+  display: flex;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -4px 8px rgba(0,0,0,0.15);
+  padding: 20px;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* 이미지 리스트 영역 (왼쪽) */
+.items-area {
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.item-box {
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fafafa;
+  position: relative;
+}
+
+.item-box input[type="checkbox"] {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  transform: scale(1.2);
+}
+
+.item-box img {
+  width: 100px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* 오른쪽 요약 박스 */
+.summary-box {
+  width: 260px;
+  min-height: 280px;
+  background: #faf8f6;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.summary-box div {
+  margin-bottom: 10px;
+  word-break: keep-all;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}

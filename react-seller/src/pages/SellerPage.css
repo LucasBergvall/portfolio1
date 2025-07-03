@@ -1,0 +1,144 @@
+/* ===== 레이아웃 및 배너 ===== */
+
+.banner-row {
+  margin-bottom: 32px;
+}
+
+.main-swiper {
+  width: 100%;
+  max-width: 900px;
+  height: 380px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.side-carousel {
+  height: 340px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.side-banner-img {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+/* ===== 장르 버튼 그룹 ===== */
+
+.seller-genre-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.genre-btn {
+  background-color: #F7C600;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 18px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.genre-btn:hover {
+  background-color: #e6b800;
+}
+
+/* ===== 상품 리스트 섹션 ===== */
+
+.seller-product-section {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1214px;
+  margin: 0 auto 50px;
+}
+
+/* 카드 전체 스타일 */
+
+.ant-card {
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 이미지 영역 */
+
+.seller-product-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%; /* 4:3 비율 유지 */
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.seller-product-image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+/* 카드 내용 영역 */
+
+.seller-card-body-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.seller-book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 버튼 그룹 */
+
+.seller-product-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  padding-left: 5px;
+}
+
+.seller-product-buttons button {
+  min-width: 100px;
+}
+
+.seller-genre {
+  margin-bottom: 5px;  /* 🔥 오타 수정: margine → margin */
+  font-size: 16px;
+}
+
+.seller-writer {
+  margin-bottom: 5px;  /* 🔥 추가 */
+  font-size: 16px;
+}

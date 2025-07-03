@@ -1,0 +1,177 @@
+.detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.detail-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.detail-content {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px 0;
+  margin-bottom: 30px; /* ✅ 여백은 유지하고 줄은 제거 */
+}
+
+.detail-buttons {
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.detail-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+}
+
+.detail-buttons button:first-child {
+  background-color: #6c757d; /* 목록 */
+  color: white;
+}
+
+.detail-buttons button:nth-child(2) {
+  background-color: #ffc107; /* 수정 */
+  color: black;
+}
+
+.detail-buttons button:last-child {
+  background-color: #dc3545; /* 삭제 */
+  color: white;
+}
+
+.detail-buttons button:hover {
+  opacity: 0.85;
+}
+
+.detail-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.detail-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.reply-section {
+ 
+}
+
+.reply-input {
+  margin-bottom: 16px;
+}
+
+.reply-input textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  resize: none;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.reply-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reply-buttons button {
+  width: 80px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 첫 번째 버튼 (등록)만 초록색 */
+.reply-buttons button:first-child {
+  background-color: #28a745; /* ✅ 초록색 등록 버튼 */
+  color: white;
+}
+
+.reply-buttons button:hover {
+  opacity: 0.85;
+}
+
+
+.reply-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.reply-list li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reply-item {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.reply-nickname {
+  font-weight: bold;
+  color: #333;
+}
+
+.reply-date {
+  font-style: italic;
+}
+
+.reply-text {
+  font-size: 14px;
+  color: #212529;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.reply-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+.reply-actions button {
+  font-size: 12px;
+  padding: 2px 6px;
+}
+

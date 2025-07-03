@@ -1,0 +1,38 @@
+/* src/pages/SaleHistory.css */
+.sale-history {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sale-history h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.salehistory-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.salehistory-btn:hover,
+.salehistory-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.salehistory-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.salehistory-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}

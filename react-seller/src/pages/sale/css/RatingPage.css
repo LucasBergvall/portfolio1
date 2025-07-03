@@ -1,0 +1,31 @@
+/* src/pages/RatingPage.css */
+
+.rating-page {
+  padding: 24px;
+  width: 100%;
+}
+
+.rating-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rating-summary {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rating-value {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.rating-detail {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.rating-item {
+  margin-bottom: 15px;
+}

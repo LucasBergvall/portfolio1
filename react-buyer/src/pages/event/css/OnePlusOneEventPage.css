@@ -1,0 +1,38 @@
+.oneplus-card {
+  width: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.oneplus-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.oneplus-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.oneplus-badge {
+  font-size: 14px;
+  color: #fa541c;
+  font-weight: bold;
+}
+
+.product-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+}

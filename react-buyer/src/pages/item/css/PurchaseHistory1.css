@@ -1,0 +1,62 @@
+.purchase-history-page {
+  padding: 24px;
+  background-color: #fff;
+  min-height: 100vh;
+  width: 100%
+}
+
+.purchase-history-page h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.purchase-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 👈 텍스트 높이 정렬 */
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.purchase-left {
+  flex: 1;
+}
+
+.purchase-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.purchase-date {
+  color: gray;
+  font-size: 13px;
+}
+
+.purchase-right {
+  min-width: 250px;            /* ✅ 넓이 증가 */
+  padding-left: 20px;          /* ✅ 좌측 여백 추가 */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.purchase-rating {
+  display: flex;
+  flex-direction: row;         /* ✅ 수평 배치로 변경 */
+  align-items: center;
+  gap: 8px;                    /* ✅ 별점과 코멘트 사이 간격 */
+}
+
+.purchase-comment {
+  font-size: 13px;
+  color: #888;
+}
+
+.ant-list {
+  width: 100%;
+}

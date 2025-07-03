@@ -1,0 +1,66 @@
+.join-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.join-page {
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.join-form .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.ant-input[readonly] {
+  background-color: #f5f5f5;
+}
+
+.join-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.join-btn:hover,
+.join-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.join-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.join-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}

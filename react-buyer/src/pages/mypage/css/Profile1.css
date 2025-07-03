@@ -1,0 +1,53 @@
+/* 전체 레이아웃 */
+.profile-container {
+  width: 100%;
+  max-width: 1000px; /* ✅ 카드 조금 더 넓게 */
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f7f8fa;  /* 배경 조금 밝게 */
+}
+
+/* 카드 영역 */
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 60px 50px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+
+.profile-card:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* 폼 항목 */
+.profile-card .ant-form-item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profile-card .ant-form-item-control {
+  width: 100%;
+}
+
+/* 인풋 */
+.profile-card .ant-input {
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+/* 버튼 */
+.profile-btn {
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}

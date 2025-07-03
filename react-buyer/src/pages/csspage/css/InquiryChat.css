@@ -1,0 +1,7 @@
+.chat-user .ant-list-item-meta {
+  text-align: right;
+}
+
+.chat-bot .ant-list-item-meta {
+  text-align: left;
+}

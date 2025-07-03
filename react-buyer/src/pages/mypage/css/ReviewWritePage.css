@@ -1,0 +1,57 @@
+.review-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.review-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.review-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+.star-rating {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.star-rating span {
+  cursor: pointer;
+  font-size: 40px;
+  transition: color 0.3s;
+}
+
+.star-rating span:hover {
+  transform: scale(1.2);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff7f50;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #ff6333;
+}

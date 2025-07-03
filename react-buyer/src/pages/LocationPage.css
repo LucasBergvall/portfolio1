@@ -1,0 +1,56 @@
+.map-area {
+  display: flex;
+  justify-content: center;      /* 가로 가운데 정렬 */
+  align-items: center;          /* 세로 가운데 정렬 */
+  gap: 16px;
+  margin: auto;                 /* 수직 가운데 정렬 위한 보조 */
+  padding: 40px 0;
+  height: 100%;                 /* 높이 지정 필요 */
+  flex-wrap: wrap;              /* 화면 좁을 때 줄바꿈 */
+}
+
+.map {
+  width: 50%;
+  height: 500px;
+  border: 1px solid #ccc;
+  position: relative;  /* 이게 빠졌다면 추가 */
+  z-index: 0;
+}
+
+
+.roadview {
+  width: 50%;
+  height: 500px;
+  display: none;
+}
+
+.roadview.show {
+  display: block;
+}
+
+.close-roadview-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+/* 2. 콘텐츠 영역이 남는 공간을 채움 */
+.all-area {
+  height: 800px;
+  flex: 1;
+}
+
+
+
+/* 1. 페이지 전체를 감싸는 wrapper */
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 83vh; /* 뷰포트 전체 높이 */
+}

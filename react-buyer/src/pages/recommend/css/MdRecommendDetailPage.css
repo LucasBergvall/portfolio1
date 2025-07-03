@@ -1,0 +1,96 @@
+.md-detail-content {
+  padding: 40px 50px;
+  background-color: #fff7f0;
+  min-height: calc(100vh - 64px - 70px);
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.md-detail-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.md-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-image-with-thumbs {
+  position: relative;
+}
+
+.md-main-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-list-vertical {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.thumbnail {
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.thumbnail.active {
+  border-color: #1890ff;
+  transform: scale(1.05);
+}
+
+.md-info-section {
+  max-width: 500px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.md-info-section .ant-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.md-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.md-sub {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.md-description {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.md-button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .md-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .md-main-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}

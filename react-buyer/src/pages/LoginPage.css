@@ -1,0 +1,99 @@
+/* 로그인 페이지 전체 래퍼 스타일 */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 */
+  background-color: #f0f2f5;
+  margin-top: 0;
+  flex-direction: column; /* 세로 방향으로 배치 */
+}
+
+/* 로그인 폼 박스 스타일 */
+.login-page {
+  width: 360px; /* 고정 너비 */
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+}
+
+/* 로그인 폼 스타일 */
+.login-form {
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+}
+
+/* Divider와 링크 스타일 */
+.login-page .ant-divider {
+  margin: 24px 0;
+}
+
+.login-page a {
+  color: #1890ff;
+}
+
+.login-links {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.login-link {
+  margin: 0 8px;
+  color: #1890ff;
+}
+
+/* 로고 스타일 */
+.logo-wrapper {
+  display: flex;
+  flex-direction: row; /* 로고와 글자를 가로로 배치 */
+  align-items: center; /* 세로 가운데 정렬 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  margin-left: 20px; /* 왼쪽 여백 추가 */
+  margin-top: 20px; /* 로고 위 여백 추가 */
+}
+
+.logo-wrapper img {
+  margin-right: 10px; /* 로고와 텍스트 간격 추가 */
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 소셜 로그인 아이콘 스타일 */
+.social-login-icons {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  gap: 20px; /* 아이콘 간격 */
+  margin: 20px 0;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; /* 원형으로 설정 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  cursor: pointer;
+  transition: transform 0.2s ease; /* 클릭 시 애니메이션 */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* 호버 시 크기 증가 */
+}

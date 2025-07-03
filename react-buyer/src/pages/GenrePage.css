@@ -1,0 +1,113 @@
+.genre-content {
+  padding: 24px 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.genre-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.genre-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.genre-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.genre-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.genre-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.genre-info {
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.genre-book-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.genre-discount-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.genre-discount {
+  color: red;
+  font-weight: bold;
+}
+
+.genre-genre {
+  margin-bottom: 5px;  /* 🔥 오타 수정: margine → margin */
+  font-size: 16px;
+}
+
+.genre-writer {
+  margin-bottom: 5px;  /* 🔥 추가 */
+  font-size: 16px;
+}
+
+
+.genre-original-price {
+  font-size: 14px;
+  color: #999;
+}
+
+.genre-original-price.discounted {
+  text-decoration: line-through;
+}
+
+.genre-final-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.item-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;   /* ← 왼쪽 정렬 유지 */
+  gap: 12px;
+  padding-left: 10px;       /* ← 원하는 만큼 왼쪽으로 이동 */
+}
+
+.item-buttons button {
+  min-width: 100px;
+}

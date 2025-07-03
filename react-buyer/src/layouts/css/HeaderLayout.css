@@ -1,0 +1,255 @@
+/* 전체 header wrapper 고정 */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* 상단 얇은 바 */
+.top-bar {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  width: 100%;
+  background-color: rgba(182, 177, 177, 0.95);
+  color: #444444;
+  font-weight: bold;
+  padding: 4px 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 3000;
+}
+
+.top-bar span:hover {
+  cursor: pointer;
+}
+
+/* 메인 헤더 */
+.main-header {
+  position: absolute;
+  top: 30px;
+  height: 80px;
+  width: 100%;
+  background-color: #001529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 2500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-link {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  width: 450px;
+  border-radius: 50px !important;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-button {
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* 카테고리 메뉴 */
+.category-menu {
+  position: absolute;
+  top: 110px;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  z-index: 2000;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* 전체메뉴 버튼 (삼선버튼) */
+.btn-anb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+}
+
+.btn-anb::before, .btn-anb::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  background: #333;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.btn-anb::before {
+  top: 50%;
+  transform: translate(-50%, -6px);
+  box-shadow: 0 6px #333, 0 12px #333;
+}
+
+.btn-anb.open::before {
+  top: 50%;
+  transform: translate(-50%, 0) rotate(45deg);
+  box-shadow: none;
+}
+
+.btn-anb.open::after {
+  content: '';
+  top: 50%;
+  transform: translate(-50%, 0) rotate(-45deg);
+}
+
+.icon-button:hover {
+  color: #1890ff !important;
+  transition: color 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 메가 드롭다운 */
+.mega-dropdown {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 40px 60px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1500;
+}
+
+.mega-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  font-size: 15px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.column li:hover {
+  color: #1890ff;
+}
+
+/* 검색 영역 wrapper */
+.search-wrapper {
+  display: flex;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* 전체 테두리 둥글게 */
+  overflow: hidden;
+}
+
+/* 셀렉트 박스 */
+.search-select {
+  width: 80px;
+  border: none;
+  background-color: #f9f9f9;
+  color: #000;
+  font-size: 14px;
+  padding: 0 10px;
+  text-align: center;
+  outline: none;
+  border-right: 1px solid #ccc;
+  appearance: none;
+  border-radius: 0;
+  
+  /* ✅ 추가! 글자 정렬용 */
+  line-height: 40px;
+  height: 40px;
+}
+
+.search-select option {
+  direction: rtl;   /* 오른쪽 → 왼쪽 텍스트 흐름 */
+  text-align: center; /* 시각적으로 가운데처럼 보이게 하는 트릭 */
+}
+
+
+/* input + 버튼 */
+.search-input .ant-input {
+  border: none !important;
+  box-shadow: none !important;
+  height: 40px !important;
+  border-radius: 0 !important;  /* ✅ 둥근 테두리 제거 */
+}
+
+.search-input .ant-input-search-button {
+  height: 40px !important;
+  border-radius: 0 !important;  /* ✅ 둥근 테두리 제거 */
+}

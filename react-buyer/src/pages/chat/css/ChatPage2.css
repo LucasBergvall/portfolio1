@@ -1,0 +1,92 @@
+/* src/pages/ChatPage2.css */
+
+.kakao-chat-page {
+  background-color: #b2cbe9;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kakao-chat-box {
+  background-color: #e5efff;
+  width: 380px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.kakao-chat-header {
+  background-color: #ffffff;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 16px;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+.kakao-chat-content {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble-wrapper {
+  margin: 4px 0;
+  display: flex;
+}
+
+.chat-bubble-wrapper.user {
+  justify-content: flex-end;
+}
+
+.chat-bubble-wrapper.bot {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  max-width: 65%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 15px;
+  line-height: 1.5;
+  word-break: break-word;
+  white-space: pre-line;
+}
+
+.chat-bubble-wrapper.user .chat-bubble {
+  background-color: #ffeb33;
+  color: #000;
+  border-top-right-radius: 0;
+}
+
+.chat-bubble-wrapper.bot .chat-bubble {
+  background-color: #ffffff;
+  color: #000;
+  border-top-left-radius: 0;
+}
+
+.kakao-chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+}
+
+.kakao-input {
+  flex: 1;
+  margin-right: 8px;
+  border-radius: 8px;
+  height: 40px;
+}
+
+.kakao-send-btn {
+  height: 40px;
+  border-radius: 8px;
+}

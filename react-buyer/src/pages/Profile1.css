@@ -1,0 +1,38 @@
+.profile-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;             /* 핵심: 완전 중앙 정렬 */
+  padding: 40px;              /* 여백 추가로 더 넓게 */
+  background-color: #fff;     /* 보기 좋게 배경 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 10px;
+}
+
+/* Form.Item 강제 확장 */
+.profile-card .ant-form-item {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* Form.Item 내부 input 영역 확장 */
+.profile-card .ant-form-item-control {
+  width: 100%;
+}
+
+/* Input 크기 전체로 */
+.profile-card .ant-input,
+.profile-card .ant-input-password {
+  width: 100%;
+}
+
+.profile-card .ant-form.ant-form-vertical {
+  width: 100% !important;
+  max-width: 600px;
+}

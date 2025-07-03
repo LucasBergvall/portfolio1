@@ -1,0 +1,52 @@
+.search-result-section {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1214px;
+  margin: 0 auto 50px;
+  padding: 0 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.search-result {
+  text-align: center;
+  margin: 40px 0 30px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.search-result-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  padding-left: 10px;
+}
+
+.search-result-buttons button {
+  min-width: 100px;
+}
+
+.search-result-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%; /* 4:3 비율 */
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.search-result-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

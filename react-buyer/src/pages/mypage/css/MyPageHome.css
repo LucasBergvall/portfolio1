@@ -1,0 +1,82 @@
+/* 마이페이지 레이아웃 */
+.ant-layout-sider {
+  background-color: #f0f2f5;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 56.1px;
+}
+
+.ant-menu-inline {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ant-menu-item {
+  font-size: 16px;
+}
+
+.ant-layout-content {
+  background: #fff;
+  padding: 24px;
+}
+
+/* 카드 스타일 */
+.ant-card {
+  margin: 20px 0;
+}
+
+.ant-card-body {
+  padding: 20px;
+}
+
+/* 공통 */
+.mypage-sider {
+  background-color: #f0f2f5;
+}
+.mypage-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+.mypage-logo-link {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* 상단 바 색상 */
+.buyer-header {
+  background-color: #001529;
+}
+.seller-header {
+  background-color: #1677ff;
+}
+
+/* 기존 .mypage-logo 대신 새로 추가 */
+.mypage-header-inner {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-left: 24px;
+}
+
+.mypage-logo-link {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Header 패딩 제거 및 정렬 */
+.buyer-header,
+.seller-header {
+  background-color: #001529; /* or #1677ff for seller */
+  padding: 0 !important; /* ✅ 기본 padding 제거 */
+  display: flex;
+  align-items: center;
+}
+
+.ant-layout-footer .mypage-footer {
+  width: 100%;
+}

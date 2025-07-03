@@ -1,0 +1,49 @@
+.like-page {
+  padding: 40px;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.like-page .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 260px;
+}
+
+.like-page .ant-card-cover img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain; /* ✅ cover → contain으로 변경 */
+  padding: 8px;
+}
+
+.like-page .ant-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.like-page .ant-card-actions .ant-btn {
+  flex: 1;
+  margin: 0 5px;
+  font-size: 14px;
+  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.like-page .ant-card-actions .ant-btn .anticon {
+  font-size: 16px;
+}
+
+.like-page .ant-divider {
+  margin: 20px 0;
+}
+
+
+
+.like-page .ant-btn-primary {
+  margin-top: 20px;
+  font-size: 16px;
+}

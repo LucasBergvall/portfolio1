@@ -1,0 +1,42 @@
+.checkout-page {
+  padding: 40px;
+}
+
+.checkout-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.checkout-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.checkout-item-card {
+  width: 100%;
+  max-width: 320px;
+}
+
+.checkout-card-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: center;
+}
+
+.checkout-total {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.checkout-buttons {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout-buttons button {
+  margin-left: 10px;
+}

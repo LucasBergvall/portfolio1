@@ -1,0 +1,28 @@
+.expired-card {
+  filter: grayscale(100%);
+  transition: transform 0.2s ease;
+}
+
+.expired-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.expired-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.expired-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}

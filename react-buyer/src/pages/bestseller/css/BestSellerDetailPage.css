@@ -1,0 +1,109 @@
+/* ===== 전체 레이아웃 ===== */
+.bestseller-detail-content {
+  padding: 40px 50px;
+  background-color: #f7f7f7;
+  min-height: calc(100vh - 64px - 70px);
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.bestseller-detail-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== 이미지 영역 ===== */
+.bestseller-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bestseller-main-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 상품 정보 영역 ===== */
+.bestseller-info-section {
+  max-width: 500px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.bestseller-info-section .ant-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bestseller-title {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.bestseller-author {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.bestseller-genrename {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.bestseller-publisher {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.bestseller-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d4f;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.bestseller-description {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.bestseller-button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.bestseller-button-group .ant-btn {
+  width: auto !important;
+}
+
+
+/* ===== 반응형 ===== */
+@media (max-width: 768px) {
+  .bestseller-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bestseller-info-section {
+    max-width: 100%;
+  }
+  .bestseller-main-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}

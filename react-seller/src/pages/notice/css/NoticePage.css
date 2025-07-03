@@ -1,0 +1,122 @@
+/* 공통 컨테이너 유지 */
+.notice-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 20px auto 0;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notice-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* 글쓰기 버튼 스타일 수정 */
+.write-button {
+  padding: 6px 16px;  /* ✅ 패딩 축소 */
+  width: 120px;
+  background-color: #28a745;
+  color: white;
+  font-size: 15px;    /* ✅ 글자 크기 약간 축소 */
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.write-button:hover {
+  background-color: #218838;
+}
+
+/* 테이블은 기존 유지 */
+.notice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notice-table th,
+.notice-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.notice-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.notice-post-title {
+  text-align: left;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.notice-post-title:hover {
+  text-decoration: underline;
+}
+
+.thumbnail-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* 페이지네이션 전체 정리 */
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;  /* 절대 줄바꿈 안되게 */
+  gap: 6px;
+}
+
+.pagination button {
+  display: inline-block;
+  padding: 6px 10px;  /* ✅ 패딩 줄이기 */
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;        /* ✅ 폭 자동으로 글자에 맞춤 */
+  min-width: unset;   /* ✅ min-width 제거 */
+}
+
+.pagination button:hover {
+  background-color: #e6f0ff;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination .nav-button {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: white;
+  color: #007bff;
+}
+
+.pagination .nav-button:hover {
+  background-color: #e6f0ff;
+}

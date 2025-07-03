@@ -1,0 +1,39 @@
+.product-section {
+  overflow: hidden; /* 또는 auto */
+  width: 100%;
+  max-width: 1214px;
+  margin: 0 auto 50px;
+  overflow: hidden;
+}
+
+.product-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;   /* ← 왼쪽 정렬 유지 */
+  gap: 12px;
+  padding-left: 10px;       /* ← 원하는 만큼 왼쪽으로 이동 */
+}
+
+.product-buttons button {
+  min-width: 100px;
+}
+
+
+.product-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%; /* 4:3 비율 확보 */
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ✅ 반드시 contain! */
+  object-position: center center; /* ✅ 위쪽 잘림 방지 */
+}

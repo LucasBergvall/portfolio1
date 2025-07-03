@@ -1,0 +1,39 @@
+.newlaunch-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.newlaunch-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.benefit-badge {
+  color: #fa541c;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.product-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  padding-left: 10px;
+}
+
+.card-disabled {
+  filter: grayscale(100%);
+  opacity: 0.6;
+  pointer-events: none;
+}

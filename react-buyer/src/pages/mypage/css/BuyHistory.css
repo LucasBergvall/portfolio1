@@ -1,0 +1,90 @@
+.border-content {
+  padding: 24px 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.border-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.border-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
+.border-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.border-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 133%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.border-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.border-info {
+  margin-top: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.border-book-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.border-discount-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.border-discount {
+  color: red;
+  font-weight: bold;
+}
+
+.border-original-price {
+  font-size: 14px;
+  color: #999;
+}
+
+.border-original-price.discounted {
+  text-decoration: line-through;
+}
+
+.border-final-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}

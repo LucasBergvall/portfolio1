@@ -1,0 +1,64 @@
+/* src/pages/member/FindIdPage.css */
+
+.findid-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.findid-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.findid-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.findid-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.findid-form input {
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.findid-form button {
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.findid-form button:hover {
+  background-color: #357ac8;
+}
+
+.findid-result {
+  margin-top: 20px;
+  font-size: 16px;
+  color: green;
+  text-align: center;
+}
+
+.findid-error {
+  margin-top: 20px;
+  font-size: 15px;
+  color: red;
+  text-align: center;
+}

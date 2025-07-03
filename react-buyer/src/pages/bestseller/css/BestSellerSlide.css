@@ -1,0 +1,97 @@
+.bestseller-wrapper {
+  width: 100%;
+  max-width: 1214px; /* 필요시 너비 제한 가능 */
+  margin: 0 auto;
+}
+
+.bestseller-section {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.bestseller-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.bestseller-swiper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.bestseller-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease; /* ⭐ 부드러운 전환 추가 */
+}
+
+.bestseller-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2); /* ⭐ 그림자 강화 */
+  transform: translateY(-5px); /* ⭐ 살짝 위로 올라감 */
+}
+
+.bestseller-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.bestseller-info {
+  padding: 8px;
+}
+
+.bestseller-title-text {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.bestseller-price {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.bestseller-rank {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: #ff4d4f;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bestseller-price-section {
+  margin-top: 8px;
+}
+
+.discount-badge {
+  color: #ff4d4f;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.bestseller-original-price {
+  font-size: 13px;
+}
+
+.bestseller-final-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 4px;
+}

@@ -1,0 +1,47 @@
+/* 왼쪽 메뉴 스타일 */
+.css-sider {
+  background-color: #f0f2f5;
+  padding-top: 20px;
+}
+
+.css-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+
+/* 카드 스타일 */
+.ant-card {
+  margin: 20px 0;
+}
+
+.ant-card-body {
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+.css-header {
+  background-color: #001529;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.css-header-inner {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding-left: 24px;
+}
+
+.css-logo-link {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.ant-layout-sidebar {
+  padding-top : 0;
+}
