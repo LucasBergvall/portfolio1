@@ -1,0 +1,44 @@
+.item-form-container {
+  padding: 40px;
+  background: #fff;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f5f5f5; /* 여백 배경색 */
+}
+
+.register-img {
+  height: 50vh;
+  object-fit: contain; /* 전체 이미지가 다 보이게 */
+  width: 100%;
+}
+
+.ant-card {
+  margin : 10px;
+}
+
+.custom-yellow-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.custom-yellow-btn:hover,
+.custom-yellow-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.custom-yellow-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.custom-yellow-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}

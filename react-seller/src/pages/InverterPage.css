@@ -1,0 +1,169 @@
+.Header {
+  /* position: sticky; ❌ */
+  /* top: 0; ❌ */
+  /* z-index: 10; ❌ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #001529;
+  padding: 0 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-toggle-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle-button.open {
+  transform: rotate(180deg);
+}
+
+.mega-menu-item {
+  margin: 15px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.mega-menu-item:hover {
+  background-color: #e6f4ff; /* 밝은 파란 배경 */
+  color: #1890ff;            /* Ant Design 메인 컬러 */
+  font-weight: 500; /* 선택적으로 글자 강조 */
+}
+
+@media (max-width: 768px) {
+  .ant-layout-header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto !important;
+    padding: 10px;
+  }
+}
+
+/* 전체 Row 가운데 정렬 */
+.inverter-grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* 카드 전체 영역 통일 */
+.inverter-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.inverter-image {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.inverter-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* 카드 내부 컨텐츠 정렬 */
+.inverter-content {
+  flex-grow: 1;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 버튼 정렬 */
+.inverter-card-buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.like-btn:hover,
+.like-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.like-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.like-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}
+
+.more-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.more-btn:hover,
+.more-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.more-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.more-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}

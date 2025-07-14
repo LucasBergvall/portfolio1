@@ -13,4 +13,6 @@ public interface PaymentHistoryActionRepository extends JpaRepository<PaymentHis
   List<PaymentHistoryAction> findByPaymentHistory_NoAndOrder_No(Long phno, Long ono);
   
   Optional<PaymentHistoryAction> findByOrder_No(Long orderNo);
+
+
 }

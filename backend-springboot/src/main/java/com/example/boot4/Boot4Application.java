@@ -22,6 +22,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 	"com.example.config",
 	"com.example.service",
 	"com.example.dto",
+	"com.example.component",
 })
 
 public class Boot4Application {

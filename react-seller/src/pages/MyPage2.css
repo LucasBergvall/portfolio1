@@ -1,0 +1,27 @@
+/* 마이페이지 레이아웃 */
+.ant-layout-sider {
+  background-color: #f0f2f5;
+}
+
+.ant-menu-inline {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ant-menu-item {
+  font-size: 16px;
+}
+
+.ant-layout-content {
+  background: #fff;
+  padding: 24px;
+}
+
+/* 카드 스타일 */
+.ant-card {
+  margin: 20px 0;
+}
+
+.ant-card-body {
+  padding: 20px;
+}

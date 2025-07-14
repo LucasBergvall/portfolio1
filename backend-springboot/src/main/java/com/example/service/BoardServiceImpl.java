@@ -9,7 +9,6 @@ import org.springframework.web.multipart.MultipartFile;
 import com.example.entity.Board;
 import com.example.entity.ImageActionBoard;
 import com.example.entity.Img;
-import com.example.projection.ImageActionBoardProjection;
 import com.example.repository.BoardRepository;
 import com.example.repository.ImageActionBoardRepository;
 import com.example.repository.ImgRepository;

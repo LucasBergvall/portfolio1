@@ -1,0 +1,63 @@
+.detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-title {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.detail-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.detail-content {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  min-height: 150px;
+}
+
+.detail-buttons {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.detail-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.detail-buttons button:first-child {
+  background-color: #6c757d; /* 목록 */
+  color: white;
+}
+
+.detail-buttons button:nth-child(2) {
+  background-color: #ffc107; /* 수정 */
+  color: black;
+}
+
+.detail-buttons button:last-child {
+  background-color: #dc3545; /* 삭제 */
+  color: white;
+}
+
+.detail-buttons button:hover {
+  opacity: 0.85;
+}

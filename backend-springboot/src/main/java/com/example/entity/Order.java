@@ -39,4 +39,10 @@ public class Order {
 
   @Transient
   private Long paymentHistoryActionNo;
+
+  @Transient
+  private Long sellerNo;
+
+  @Transient
+  private Long count;
 }

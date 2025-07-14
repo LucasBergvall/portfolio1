@@ -1,0 +1,38 @@
+/* src/pages/ItemRegisterForm.css */
+.inverter-register-form {
+  padding: 24px;
+  width: 100%;
+}
+
+.inverter-register-form h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.inverter-register-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+
+.inverter-register-btn:hover,
+.inverter-register-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.inverter-register-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.inverter-register-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}

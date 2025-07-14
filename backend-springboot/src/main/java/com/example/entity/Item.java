@@ -97,4 +97,7 @@ public class Item {
   @Transient
   @JsonProperty("writer")
   private String writer;
+
+  @Transient
+  private Long sellerNo;
 }

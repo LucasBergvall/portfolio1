@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +16,8 @@ import org.springframework.data.domain.Sort;
 
 import com.example.entity.Order;
 import com.example.entity.PaymentHistoryAction;
+import com.example.entity.ReviewAction;
+import com.example.repository.MessageReportRepository;
 import com.example.repository.OrderRepository;
 import com.example.repository.PaymentHistoryActionRepository;
 import com.example.repository.ReviewActionRepository;
@@ -31,6 +34,7 @@ public class BuyerOrderRestController {
   private final OrderRepository oRepository;
   private final ReviewActionRepository reviewActionRepository;
   private final PaymentHistoryActionRepository paymentHistoryActionRepository;
+  private final MessageReportRepository messageReportRepository;
 
   // 127.0.0.1:8080/api2/buyorder/selectlist?page=1&cnt=10
   // order에 있는것만 가능
@@ -59,10 +63,35 @@ public class BuyerOrderRestController {
           List<Order> list = oRepository.findByMember_No(mno ,pageRequest);
           System.out.println(list.size());
           for(Order obj : list){
-              obj.getItem().setBookprice(obj.getItem().getItemBook().getBookprice());
-              obj.getItem().setDefault_img_url(obj.getItem().getItemBook().getDefaultImg());
-              Long orderNo = obj.getNo(); // oderNo
-              System.out.println(orderNo);
+            obj.getItem().setBookprice(obj.getItem().getItemBook().getBookprice());
+            obj.getItem().setDefault_img_url(obj.getItem().getItemBook().getDefaultImg());
+            obj.getItem().setSellerNo(obj.getItem().getMember().getNo());
+            obj.setNo(obj.getNo());
+
+            Long orderNo = obj.getNo(); // oderNo
+            System.out.println(orderNo);
+
+            // ✅ PaymentHistoryAction 조회 및 번호 설정
+            Optional<PaymentHistoryAction> result1 = paymentHistoryActionRepository.findByOrder_No(orderNo);
+
+            if (result1.isPresent()) {
+                PaymentHistoryAction pha = result1.get(); // ← 여기서 pha가 나옴
+                obj.setPaymentHistoryActionNo(pha.getNo());
+
+                if (pha != null) {
+                    // 6. 결제이력 번호로 ReviewAction 조회
+                    Long count = messageReportRepository.countUnreadBuyerMessages(pha.getNo(), mno);
+                    obj.setCount(count);
+                    obj.setPaymentHistoryActionNo(pha.getNo());
+                    ReviewAction reviewAction = reviewActionRepository.findByPaymentHistoryAction_No(pha.getNo());
+
+                    if (reviewAction != null) {
+                        obj.setReview(reviewAction.getReview());
+                    }
+                }
+
+            }
+
           }
           
           result.put("status", 1);
@@ -125,6 +154,8 @@ public class BuyerOrderRestController {
             // 5. 상품 이미지/가격 보정
             order.getItem().setBookprice(order.getItem().getItemBook().getBookprice());
             order.getItem().setDefault_img_url(order.getItem().getItemBook().getDefaultImg());
+            order.getItem().setSellerNo(order.getItem().getMember().getNo());
+            
 
             // 6. 응답 반환
             map.put("status", 1);

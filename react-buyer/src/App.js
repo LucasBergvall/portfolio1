@@ -41,10 +41,9 @@ import ChatPage3 from "./pages/chat/ChatPage3";
 import ChatPage5 from "./pages/chat/ChatPage5"
 
 // CSSPage
-import CSSPage from "./pages/csspage/CSSPage_";
-import CustomerVoicePage from "./pages/csspage/CustomerVoicePage";
-import FAQPage from "./pages/csspage/FAQPage";
+import CSSPage from "./pages/csspage/CSSPage";
 import InquiryPage from "./pages/csspage/InquiryPage";
+
 import LocationPage from "./pages/LocationPage";
 
 // BestSellerPage
@@ -80,6 +79,7 @@ import SearchResultPage from "./pages/search/SearchResultPage";
 import MagazineDetailPage from "./pages/item/MagazineDetailPage";
 import FindIdPage from "./pages/FindIdPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
+import Mqtt from "./pages/Mqtt";
 
 const App = () => {
 
@@ -165,11 +165,12 @@ const App = () => {
           <Route path="/chat4" element={<ChatPage3 />} />
           <Route path="/chat5" element={<ChatPage5 />} /> 
 
+          {/* Mqtt */}
+          <Route path="/mqtt" element={<Mqtt />} />
+
           {/* CSSPage */}
           <Route path="/css" element={<CSSPage />} />
-          <Route path="/customer-voice" element={<CustomerVoicePage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path="/inquiry" element={<InquiryPage />} />
+          <Route path="/inquiry-page" element={<InquiryPage />} />
 
           {/* BestSeller */}
           <Route path="/bestseller-detail" element={<BestSellerDetailPage />} />

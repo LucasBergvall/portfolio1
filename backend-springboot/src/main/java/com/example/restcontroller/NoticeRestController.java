@@ -90,7 +90,7 @@ public class NoticeRestController {
                 }
 
                 map.put("status", 1);
-                map.put("message", "수정 했습니다.");
+                map.put("message", "수정이 완료 됐습니다.");
             }
                 
         } catch (Exception e) {

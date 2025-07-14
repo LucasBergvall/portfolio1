@@ -1,0 +1,76 @@
+/* src/pages/InquiryPage.css */
+.inquiry {
+  padding: 24px;
+  width: 100%;
+}
+
+.inquiry h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.inquiry-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.inquiry-btn:hover,
+.inquiry-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.inquiry-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.inquiry-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}
+
+.inquiry-chat-modal {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  z-index: 1000;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 6px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination button.active {
+  background-color: #1890ff;
+  color: white;
+  border-color: #1890ff;
+  font-weight: bold;
+}

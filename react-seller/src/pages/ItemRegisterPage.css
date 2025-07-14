@@ -1,0 +1,42 @@
+/* src/pages/ItemRegisterPage.css */
+.item-register-page {
+  padding: 24px;
+  width: 100%;
+}
+
+.item-register-page h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.item-register-add {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.item-register-btn {
+  background-color: #F7C600 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.item-register-btn:hover,
+.item-register-btn:focus {
+  background-color: #e6b800 !important;
+  color: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.item-register-btn:active {
+  background-color: #cc9e00 !important;
+  transform: scale(0.98);
+}
+
+.item-register-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #F7C600 !important;
+}

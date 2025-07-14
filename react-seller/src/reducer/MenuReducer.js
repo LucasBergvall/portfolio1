@@ -6,7 +6,8 @@ const initialstate = {
     item_menu: "1", // 사이드바 1
     mypage_menu: "1", // 사이드바 1
     buy_menu : "1",
-    guest_menu : "1"
+    guest_menu : "1",
+    css_menu : "1"
 };
 
 const MenuReducer = (state = initialstate, action) => {

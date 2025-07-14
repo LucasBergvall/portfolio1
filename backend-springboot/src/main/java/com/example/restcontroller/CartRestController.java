@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entity.Cart;
 import com.example.entity.Item;
-import com.example.entity.ItemImg;
 import com.example.entity.Member;
 import com.example.projection.CartGroupProjection;
 import com.example.repository.CartRepository;

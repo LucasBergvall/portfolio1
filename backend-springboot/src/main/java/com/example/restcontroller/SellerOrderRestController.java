@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.entity.Order;
 import com.example.entity.PaymentHistoryAction;
 import com.example.entity.ReviewAction;
+import com.example.repository.MessageReportRepository;
 import com.example.repository.OrderRepository;
 import com.example.repository.PaymentHistoryActionRepository;
 import com.example.repository.ReviewActionRepository;
@@ -30,6 +31,7 @@ public class SellerOrderRestController {
   private final OrderRepository oRepository;
   private final ReviewActionRepository reviewActionRepository;
   private final PaymentHistoryActionRepository paymentHistoryActionRepository;
+  private final MessageReportRepository messageReportRepository;
   
   // 127.0.0.1:8080/api2/sorder/selectlist?page=1&cnt=10
   // order에 있는것만 가능
@@ -61,14 +63,20 @@ public class SellerOrderRestController {
             for (Order obj : list) {
                 // 4. 가격 정보 보정
                 obj.getItem().setBookprice(obj.getItem().getItemBook().getBookprice());
+                obj.getItem().setSellerNo(obj.getItem().getMember().getNo());
 
                 // 5. 주문 번호 기준으로 PaymentHistoryAction 조회
                 Long orderNo = obj.getNo();
                 PaymentHistoryAction pha = paymentHistoryActionRepository.findByOrder_No(orderNo).orElse(null);
+               
 
                 if (pha != null) {
                     // 6. 결제이력 번호로 ReviewAction 조회
+                    Long count = messageReportRepository.countUnreadSellerMessages(pha.getNo(), mno);
+                    obj.setCount(count);
+                    obj.setPaymentHistoryActionNo(pha.getNo());
                     ReviewAction reviewAction = reviewActionRepository.findByPaymentHistoryAction_No(pha.getNo());
+
                     if (reviewAction != null) {
                         obj.setReview(reviewAction.getReview());
                     }

@@ -4,7 +4,9 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function(app) {
-    app.use(
+  
+  // 백엔드와 프론트엔드 연결  
+  app.use(
         '/api2',
         createProxyMiddleware({
           target : 'http://127.0.0.1:8080/api2',
@@ -12,6 +14,7 @@ module.exports = function(app) {
         })
     )
 
+    // 챗봇 연결
     app.use(
       '/api3',
       createProxyMiddleware({

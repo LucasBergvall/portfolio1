@@ -33,6 +33,9 @@ import NoticeDetailPage from './pages/notice/NoticeDetailPage';
 import NoticeWritePage from './pages/notice/NoticeWritePage';
 import NoticeEditPage from './pages/notice/NoticeEditPage';
 import LocationPage from './pages/LocationPage';
+import CssPage from './pages/css/CSSPage';
+import InquiryPage from './pages/css/InquiryPage';
+import Mqtt from './pages/Mqtt';
 
 
 
@@ -87,6 +90,11 @@ const App = () => {
             <Route path="delete" element={<ItemDeletePage/>} />
             <Route path="detail" element={<ItemDetailSellerPage/>} />
           </Route>
+          
+          {/* css */}
+          <Route path='/css' element={<CssPage />} />
+          <Route path='/inquiry-page' element={<InquiryPage />} />
+
           {/* sale */}
           <Route path='/sale' element={logged === 1 ? <SalePage/>: <Navigate to="/login" replace />}>
             <Route path="list" element={<SaleHistory/>} />
@@ -117,6 +125,9 @@ const App = () => {
           <Route path='/notice-detail' element={<NoticeDetailPage />} />
           <Route path='/notice-write' element={<NoticeWritePage />} />
           <Route path='/notice-edit' element={<NoticeEditPage />} />
+
+          {/* mqtt */}
+          <Route path='/mqtt' element={<Mqtt />} />
         </Routes>    
       </div>
     </>
